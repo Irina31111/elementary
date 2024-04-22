@@ -2,15 +2,23 @@ package ru.calculator;
 
 public class Calculator {
 
-    public static int plus(int first, int second) {
+    public static void plus(int first, int second) {
         int result = first + second;
-        return result;
+        System.out.println(result);
+    }
+
+    public static void minus(int first, int second) {
+        int result = first - second;
+        System.out.println(result);
     }
 
     public static void main(String[] args) {
-        int res = plus(100, 500);
-        System.out.println(res);
+        plus(1, 2);
+        plus(10, 11);
+        minus(7, 3);
+        minus(2, 6);
     }
 
 }
+
 
