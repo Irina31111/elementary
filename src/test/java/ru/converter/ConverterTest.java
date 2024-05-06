@@ -1,7 +1,6 @@
 package ru.converter;
 
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
 import static org.assertj.core.api.Assertions.*;
 
 class ConverterTest {
@@ -14,6 +13,7 @@ class ConverterTest {
         float eps = 0.0001f;
         assertThat(out).isEqualTo(expected, withPrecision(eps));
     }
+
     @Test
     void whenConvert100RblThen1Euro() {
         float in = 100;
@@ -22,6 +22,7 @@ class ConverterTest {
         float eps = 0.0001f;
         assertThat(out).isEqualTo(expected, withPrecision(eps));
     }
+
     @Test
     void whenConvert0RblThen0Euro() {
         float in = 0;
@@ -39,6 +40,7 @@ class ConverterTest {
         float eps = 0.0001f;
         assertThat(out).isEqualTo(expected, withPrecision(eps));
     }
+
     @Test
     void whenConvert90RblThen1Dlr() {
         float in = 90;
@@ -47,6 +49,7 @@ class ConverterTest {
         float eps = 0.0001f;
         assertThat(out).isEqualTo(expected, withPrecision(eps));
     }
+
     @Test
     void whenConvert120RblThen1DOT3333Dlr() {
         float in = 120;
